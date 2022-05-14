@@ -281,7 +281,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  ETH : 0.0882 / Mint
+                  ETH : 0.0883 / Mint
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
