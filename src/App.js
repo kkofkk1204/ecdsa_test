@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { Provider, useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
@@ -130,6 +130,8 @@ function App() {
 
 
   const claimNFTs = async () => {
+
+    
     const message = ethers.utils.solidityKeccak256(['address','address'],
     [
       '0xccb5186D7cbE961130cc8ebd6ba8BB453a93E962',
@@ -138,7 +140,7 @@ function App() {
     console.log(message)
     const arrayifyMessage = ethers.utils.arrayify(message)
     console.log(arrayifyMessage)
-    const flatSignture = await library.getSigner().signMessage(arrayifyMessage)
+    const flatSignture = await Provider.getSigner().signMessage(arrayifyMessage)
     console.log(flatSignture)
 
 
@@ -281,7 +283,7 @@ function App() {
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  ETH : 0.0883 / Mint
+                  ETH : 0.035 / Mint
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
