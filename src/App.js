@@ -101,9 +101,6 @@ export const StyledLink = styled.a`
 `;
 
 function App() {
-  const { activate, deactivate, library, account } = useWeb3React()
-  const injected = new InjectedConnector({
-    supportedChainIds: [1, 3, 4, 5, 42, 80001],})
 
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
