@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0xd9145CCE52D386f254917e481eB44e9943F39138",
-  "SCAN_LINK": "https://etherscan.io/address/0xd9145CCE52D386f254917e481eB44e9943F39138",
+  "CONTRACT_ADDRESS": "0xa486df29c5b2195ede01fc9b4f3a537b7b669e8d",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0xa486df29c5b2195ede01fc9b4f3a537b7b669e8d",
   "NETWORK": {
     "NAME": "Mumbai Testnet",
     "SYMBOL": "MATIC",
@@ -9,7 +9,7 @@
   "NFT_NAME": "tsuichung11",
   "SYMBOL": "tsuichung11",
   "MAX_SUPPLY": 6000,
-  "WEI_COST": 350000000000000000,
+  "WEI_COST": 35000000000000000,
   "DISPLAY_COST": 0.35,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
