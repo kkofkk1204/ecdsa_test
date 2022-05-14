@@ -131,7 +131,8 @@ function App() {
 
   const claimNFTs = async () => {
 
-    
+    const providers = new providers.Web3Provider(library.provider);
+
     const message = ethers.utils.solidityKeccak256(['address','address'],
     [
       '0xccb5186D7cbE961130cc8ebd6ba8BB453a93E962',
@@ -140,7 +141,7 @@ function App() {
     console.log(message)
     const arrayifyMessage = ethers.utils.arrayify(message)
     console.log(arrayifyMessage)
-    const flatSignture = await Provider.getSigner().signMessage(arrayifyMessage)
+    const flatSignture = await providers.getSigner().signMessage(arrayifyMessage)
     console.log(flatSignture)
 
 
